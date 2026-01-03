@@ -19,3 +19,10 @@ function toggleSign() {
   if (currentValue === "") return;
   $("#result").val(currentValue * -1);
 }
+
+// percentage function
+function percentage() {
+  let currentValue = $("#result").val();
+  if (currentValue === "") return;
+  $("#result").val(currentValue / 100);
+}
