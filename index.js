@@ -7,3 +7,9 @@ function insertNumber(num) {
 function clearResult() {
   $("#result").val("");
 }
+
+// calculate function
+function calculate() {
+   let result = eval($("#result").val());
+   $("#result").val(result);
+}

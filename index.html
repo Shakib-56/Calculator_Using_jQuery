@@ -16,8 +16,18 @@
         <div>
           <input type="button" class="btn" value="C" onclick="clearResult()" />
           <input type="button" class="btn" value="+/-" />
-          <input type="button" class="btn" value="%" />
-          <input type="button" class="btn btn-style" value="/" />
+          <input
+            type="button"
+            class="btn"
+            value="%"
+            onclick="insertNumber('%')"
+          />
+          <input
+            type="button"
+            class="btn btn-style"
+            value="/"
+            onclick="insertNumber('/')"
+          />
         </div>
         <div>
           <input
@@ -38,7 +48,12 @@
             value="9"
             onclick="insertNumber(9)"
           />
-          <input type="button" class="btn btn-style" value="X" />
+          <input
+            type="button"
+            class="btn btn-style"
+            value="X"
+            onclick="insertNumber('*')"
+          />
         </div>
         <div>
           <input
@@ -59,7 +74,12 @@
             value="6"
             onclick="insertNumber(6)"
           />
-          <input type="button" class="btn btn-style" value="-" />
+          <input
+            type="button"
+            class="btn btn-style"
+            value="-"
+            onclick="insertNumber('-')"
+          />
         </div>
         <div>
           <input
@@ -80,7 +100,12 @@
             value="3"
             onclick="insertNumber(3)"
           />
-          <input type="button" class="btn btn-style" value="+" />
+          <input
+            type="button"
+            class="btn btn-style"
+            value="+"
+            onclick="insertNumber('+')"
+          />
         </div>
         <div>
           <input
@@ -101,6 +126,7 @@
             class="btn"
             style="background-color: yellow"
             value="="
+            onclick="calculate()"
           />
         </div>
       </div>
