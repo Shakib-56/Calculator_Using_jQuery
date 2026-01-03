@@ -10,6 +10,12 @@ function clearResult() {
 
 // calculate function
 function calculate() {
-   let result = eval($("#result").val());
-   $("#result").val(result);
+  let result = eval($("#result").val());
+  $("#result").val(result);
+}
+// toggle sign function
+function toggleSign() {
+  let currentValue = $("#result").val();
+  if (currentValue === "") return;
+  $("#result").val(currentValue * -1);
 }
